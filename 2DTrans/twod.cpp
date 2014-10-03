@@ -1,8 +1,8 @@
 //
-//  main.cpp
+//  twod.cpp
 //  2DTrans
 //
-//  Created by shivkanth on 26/07/13.
+//  Created by shivkanth on 29/08/13.
 //  Copyright (c) 2013 shivkanth. All rights reserved.
 //
 
@@ -18,14 +18,14 @@ void myInit()
     glLoadIdentity();
     gluOrtho2D(-640.0,640.0,-480.0,480.0);
     glBegin(GL_POINTS);
-   // glVertex2d(-100.0, 0.0);
+    // glVertex2d(-100.0, 0.0);
     //glVertex2d(0.0,-480.0 );
     glEnd();
 }
 void myDisplay()
 {
     glClear(GL_COLOR_BUFFER_BIT);
-
+    
     glBegin(GL_LINES);
     glVertex2d(0.0, 480.0);
     glVertex2d(0.0, -480.0);
@@ -34,11 +34,11 @@ void myDisplay()
     glVertex2d(640.0, 0.0);
     glVertex2d(-640.0, 0.0);
     glEnd();
-
+    
     int tx,ty;
     std::cout<<"enter the x and y translation values";
     cin>>tx>>ty;
-        glBegin(GL_QUADS);
+    glBegin(GL_QUADS);
     glVertex2d(100,100);
     glVertex2d(100,200);
     glVertex2d(200,200);
@@ -54,7 +54,7 @@ void myDisplay()
     glVertex2d(200+tx,200+ty);
     glVertex2d(200+tx,100+ty);
     glEnd();
-
+    
     glFlush();
 }
 

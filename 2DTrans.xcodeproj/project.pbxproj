@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		587E664517A23B6F00D847AC /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 587E664417A23B6F00D847AC /* main.cpp */; };
 		587E664717A23B6F00D847AC /* _DTrans.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 587E664617A23B6F00D847AC /* _DTrans.1 */; };
+		587E664E17A23C1A00D847AC /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 587E664D17A23C1A00D847AC /* OpenGL.framework */; };
+		587E665017A23C3700D847AC /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 587E664F17A23C3700D847AC /* GLUT.framework */; };
+		58A0700E17BDCDE800BD295B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 58A0700D17BDCDE800BD295B /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,8 +28,10 @@
 
 /* Begin PBXFileReference section */
 		587E664017A23B6F00D847AC /* 2DTrans */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 2DTrans; sourceTree = BUILT_PRODUCTS_DIR; };
-		587E664417A23B6F00D847AC /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		587E664617A23B6F00D847AC /* _DTrans.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = _DTrans.1; sourceTree = "<group>"; };
+		587E664D17A23C1A00D847AC /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = ../../../../../../../../System/Library/Frameworks/OpenGL.framework; sourceTree = "<group>"; };
+		587E664F17A23C3700D847AC /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = ../../../../../../../../System/Library/Frameworks/GLUT.framework; sourceTree = "<group>"; };
+		58A0700D17BDCDE800BD295B /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +39,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				587E664E17A23C1A00D847AC /* OpenGL.framework in Frameworks */,
+				587E665017A23C3700D847AC /* GLUT.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,8 +66,10 @@
 		587E664317A23B6F00D847AC /* 2DTrans */ = {
 			isa = PBXGroup;
 			children = (
-				587E664417A23B6F00D847AC /* main.cpp */,
+				587E664F17A23C3700D847AC /* GLUT.framework */,
+				587E664D17A23C1A00D847AC /* OpenGL.framework */,
 				587E664617A23B6F00D847AC /* _DTrans.1 */,
+				58A0700D17BDCDE800BD295B /* main.cpp */,
 			);
 			path = 2DTrans;
 			sourceTree = "<group>";
@@ -117,7 +125,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				587E664517A23B6F00D847AC /* main.cpp in Sources */,
+				58A0700E17BDCDE800BD295B /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,6 +218,7 @@
 				587E664C17A23B6F00D847AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
